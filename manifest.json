@@ -8,7 +8,7 @@
         "default_title": "Click to show an alert"
     },
     "background": {
-        "service_worker": "js/background.js"
+        "service_worker": "js/background.bundle.js"
     },
     "content_scripts": [ {
         "matches": [ "*://*/*" ],
@@ -19,7 +19,7 @@
     },
     {
         "matches": [ "*://*/*" ],
-        "js": ["js/manager.js"],
+        "js": ["js/manager.bundle.js"],
         "run_at": "document_end"
     }],
     "web_accessible_resources": [ {
