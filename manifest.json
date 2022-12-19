@@ -1,7 +1,7 @@
 {
     "name": "Autofill",
-    "description": "Base Level Extension",
-    "version": "1.0",
+    "description": "Autofill is a open source extension that allows you to fill in job forms with one click.",
+    "version": "0.0.1",
     "manifest_version": 3,
     "permissions": ["tabs", "activeTab", "scripting", "storage"],
     "action": {
