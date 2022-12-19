@@ -12,7 +12,7 @@
     },
     "content_scripts": [ {
         "matches": [ "*://*/*" ],
-        "js": ["js/autofill.js", "js/companydata.js", "js/userdata.js", "js/popup.js", 
+        "js": ["js/autofill.bundle.js", "js/companydata.bundle.js", "js/userdata.bundle.js", "js/popup.bundle.js", 
         "js/jquery.min.js", "js/popper.min.js", "js/bootstrap.min.js"],
         "css": ["css/popup.css"],
         "run_at": "document_start"
