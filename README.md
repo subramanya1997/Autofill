@@ -35,4 +35,4 @@ Inside chrome
 * [x] Upload resume (Works for greenhouse, lever)
 * [x] Upload cover letter (Works for greenhouse, lever)
 * [x] Save data in a local file
-* [ ] Add education<br>
+* [ ] Add education (Works for greenhouse)<br>
