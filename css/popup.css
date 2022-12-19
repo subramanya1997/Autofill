@@ -1,0 +1,113 @@
+.autofill_toast {
+    font-size: 13px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    max-width: 350px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, .85);
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    border-radius: .25rem
+}
+
+.autofill_toast:not(:last-child) {
+    margin-bottom: .75rem
+}
+
+.autofill_toast.showing {
+    opacity: 1
+}
+
+.autofill_toast.show {
+    display: block;
+    opacity: 1
+}
+
+.autofill_toast.hide {
+    display: none
+}
+
+.autofill_toast-text {
+    font-size: 13px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #000;
+}
+
+.autofill_toast-header {
+    font-size: 13px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0rem .75rem;
+    color: #6c757d;
+    background-color: rgba(255, 255, 255, .85);
+    background-clip: padding-box;
+    border-bottom: 1px solid rgba(0, 0, 0, .05)
+}
+
+.autofill_toast-body {
+    padding: .75rem
+}
+
+.autofill_close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5
+}
+
+.autofill_close:hover {
+    color: #000;
+    text-decoration: none
+}
+
+.autofill_close:not(:disabled):not(.disabled):focus,
+.autofill_close:not(:disabled):not(.disabled):hover {
+    opacity: .75
+}
+
+button.autofill_close {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+
+.autofill_d-none {
+    display: none !important
+}
+
+.autofill_justify-content-between {
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important
+}
+
+.autofill_d-flex {
+    display: -ms-flexbox !important;
+    display: flex !important
+}
+
+.autofill_btn {
+    border: 2px solid #0c343d;
+    background-color: #6d858a;
+    color: #fff;
+    padding: 5px 5px;
+    font-size: 13px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    cursor: pointer;
+    border-color: #e7e7e7;
+}
+  
+.autofill_btn:hover {
+    background: #244850;
+}

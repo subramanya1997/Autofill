@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Autofill</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+  </head>
+  <body class="d-flex flex-column h-100">
+
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand">Autofill</a>
+      <a class="navbar-text" href="https://www.linkedin.com/in/nsubramanya">
+        Developed by Subramanya N</a>
+      </a>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="my-5">
+            <h3>Edit Profile to Autofill</h3>
+            <hr>
+          </div>
+        </div>
+      </div>
+      <form id="editprofileform">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputfirstname">First Name</label>
+            <input type="text" data-type="general" class="form-control form-control-sm" id="inputfirstname" placeholder="First Name" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputlastname">Last Name</label>
+            <input type="text" data-type="general" class="form-control form-control-sm " id="inputlastname" placeholder="Last Name" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputemail">Email</label>
+            <input type="email" data-type="general" class="form-control form-control-sm" id="inputemail" placeholder="Email" required>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputphone">Phone</label>
+            <input type="text" data-type="general" pattern="[0-9]{10}" class="form-control form-control-sm" id="inputphone" placeholder="Phone" required>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputaddress">Address</label>
+            <input type="text" data-type="general" class="form-control form-control-sm" id="inputaddress" placeholder="Address" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputcity">City</label>
+            <input type="text" data-type="general" class="form-control form-control-sm" id="inputcity" placeholder="City" required>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputstate">State</label>
+            <input type="text" data-type="general" class="form-control form-control-sm" id="inputstate" placeholder="State" required>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputzip">Zip</label>
+            <input type="text" data-type="general" pattern="[0-9]{5}" class="form-control form-control-sm" id="inputzip" placeholder="Zip" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputlinkedin">LinkedIn</label>
+            <input type="text" data-type="general" class="form-control form-control-sm" id="inputlinkedin" placeholder="LinkedIn" >
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputgithub">GitHub</label>
+            <input type="text" data-type="general" class="form-control form-control-sm" id="inputgithub" placeholder="GitHub">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputwebsite">Website</label>
+            <input type="text" data-type="general" class="form-control form-control-sm" id="inputwebsite" placeholder="Website">
+          </div>
+        </div>
+        <hr>
+        <h5>Files</h5>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputresume">Resume</label>
+            <input type="file" accept=".pdf" data-type="resume" class="form-control-file" id="inputresume">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputcoverletter">Cover Letter</label>
+            <input type="file" data-type="resume" class="form-control-file" id="inputcoverletter">
+          </div>
+        </div>
+        <hr>
+        <h5>Work Experience Data</h5>
+        <div id="inputemployment">
+          <!-- Add employement -->
+        </div>
+        <div class="form-row d-flex justify-content-center">
+          <div class="form-group col-md-4 ">
+            <button type="button" class="col-md-12 btn btn-primary btn-sm mt-2" id="addemployment">Add Employment</button>
+          </div>
+        </div>
+        <hr>
+        <h5>Education Data</h5>
+        <div id="inputeducation">
+          <!-- Add education -->
+        </div>
+        <div class="form-row d-flex justify-content-center">
+          <div class="form-group col-md-4">
+            <button type="button" class="col-md-12 btn btn-primary btn-sm mt-2" id="addeducation">Add Education</button>
+          </div>
+        </div>
+        <hr>
+        <h5>Equal Employment Data</h5>
+        <div class="form-row">
+          <div class="form-group col-md-3">
+            <label for="inputethnicity">What is your ethnicity?</label>
+            <select id="inputethnicity" data-type="general" class="form-control form-control-sm form-select" required>
+              <option value="" selected>Choose...</option>
+              <option value="white">White</option>
+              <option value="Black / African American">Black / African American</option>
+              <option value="Hispanic / Latino">Hispanic / Latino</option>
+              <option value="South Asian">South Asian</option>
+              <option value="Southeast Asian">Southeast Asian</option>
+              <option value="East Asian">East Asian</option>
+              <option value="Native American / Alaskan">Native American / Alaskan</option>
+              <option value="Native Hawaiian / Pacific Islander">Native Hawaiian / Pacific Islander</option>
+              <option value="Middle Eastern">Middle Eastern</option>
+            </select>
+          </div>
+          <div class="form-group col-md-3">
+            <label for="inputgender">What is your gender?</label>
+            <select id="inputgender" data-type="general" class="form-control form-control-sm" required>
+              <option value="" selected>Choose...</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Non-binary">Non-binary</option>
+              <option value="Prefer not to say">Prefer not to say</option>
+            </select>
+          </div>
+          <div class="form-group col-md-3">
+            <label for="inputlgbtq">Do you identify as LGBTQ+?</label>
+            <select id="inputlgbtq" data-type="general" class="form-control form-control-sm" required>
+              <option value="" selected>Choose...</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+          <div class="form-group col-md-3">
+            <label for="inputauthorization">Are you authorized to work in the US?</label>
+            <select id="inputauthorization" data-type="general" class="form-control form-control-sm" required>
+              <option value="" selected>Choose...</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputsponsorship">Will you now or in the future require sponsorship for employment visa status?</label>
+            <select id="inputsponsorship" data-type="general" class="form-control form-control-sm" required>
+              <option value="" selected>Choose...</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+          <div class="form-group col-md-3">
+            <label for="inputdisability">Do you have a disability?</label>
+            <select id="inputdisability" data-type="general" class="form-control form-control-sm" required>
+              <option value="" selected>Choose...</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+          <div class="form-group col-md-3">
+            <label for="inputveteran">Are you a protected veteran?</label>
+            <select id="inputveteran" data-type="general" class="form-control form-control-sm" required>
+              <option value="" selected>Choose...</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+        </div>
+        <hr>
+        <div class="form-row d-flex justify-content-between">
+          <div class="form-group col-md-4">
+            <button type="button" class="col-md-12 btn btn-danger mt-2 " id="cancel">Cancel</button>
+          </div>
+          <div class="form-group col-md-4">
+            <button type="submit" class="col-md-12 btn btn-success mt-2" id="save">Save</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="js/editprofile.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>

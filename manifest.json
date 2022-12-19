@@ -1,0 +1,35 @@
+{
+    "name": "Autofill",
+    "description": "Base Level Extension",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["tabs", "activeTab", "scripting", "storage"],
+    "action": {
+        "default_title": "Click to show an alert"
+    },
+    "background": {
+        "service_worker": "js/background.js"
+    },
+    "content_scripts": [ {
+        "matches": [ "*://*/*" ],
+        "js": ["js/autofill.js", "js/companydata.js", "js/userdata.js", "js/popup.js", 
+        "js/jquery.min.js", "js/popper.min.js", "js/bootstrap.min.js"],
+        "css": ["css/popup.css"],
+        "run_at": "document_start"
+    },
+    {
+        "matches": [ "*://*/*" ],
+        "js": ["js/manager.js"],
+        "run_at": "document_end"
+    }],
+    "web_accessible_resources": [ {
+        "resources": [ "data/*", "index.html", "popup.html", "js/*", "css/*", "images/*" ],
+        "matches": [ "*://*/*" ]
+    } ],
+    "file_system_provider_capabilities": {
+        "configurable": true,
+        "watchable": false,
+        "multiple_mounts": true,
+        "source": "data"
+    }
+  }
