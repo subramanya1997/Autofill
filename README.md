@@ -1,10 +1,9 @@
-# Chrome Extension to Autofill job forms
+# <img src="img/logo_128x128.png" alt="logo" style="width:24px;"/> Chrome Extension to Autofill job forms
 
 ## Installation setup 
 ### Step 1.
 ```
- 1. git clone https://github.com/subramanya1997/autofill.jobs.git local_folder
- 2. git checkout chrome-extension
+ 1. git clone https://github.com/subramanya1997/Autofill.git local_folder
 ```
 ### Step 2.
 Inside chrome
@@ -34,5 +33,13 @@ Inside chrome
 * [x] Autofill Select
 * [x] Upload resume (Works for greenhouse, lever)
 * [x] Upload cover letter (Works for greenhouse, lever)
-* [x] Save data in a local file
+* [x] Save data in local chome storage (Mainly din't want to collect data from users)
 * [ ] Add education (Works for greenhouse)<br>
+
+## Screenshots
+
+1. Popup
+![Popup](img/popup.png)
+
+2. Edit Profile
+![Edit profile](img/editprofile.png)
