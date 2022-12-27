@@ -1,5 +1,13 @@
 # <img src="img/logo_128x128.png" alt="logo" style="width:24px;"/> Chrome Extension to Autofill job forms
 
+Are you tired of spending hours filling multiple job applications? Checkout my latest project "Autofill", a chrome extension which makes the process a breeze. With just a few clicks, you can have all of your personal and employment information automatically entered into any job application form.
+
+To use Autofill, simply install the extension and create a profile with all of your relevant information. When you come across a job application, click the extension icon and click "Autofill". The extension will fill majority of your fields leaving behind only job specific fields.
+
+All of your information is stored locally on your Chrome browser, ensuring that your privacy is protected. Currently, Autofill works best with greenhouse.io and lever.co, but I am working to expand compatibility.
+
+If you encounter any bugs or have suggestions for improvement reach out.
+
 ## Installation setup 
 ### Step 1.
 ```
